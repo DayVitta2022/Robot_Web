@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2025-01-26T12:55:53.015178" rpa="false" schemaversion="5">
+<suite id="s1" name="Start" source="c:\Users\dayane.l.vitta\Desktop\Robot.Project\Robot_Web\start.robot">
+<test id="s1-t1" name="Acessar um site" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-26T12:55:53.496783" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-26T12:55:53.496783" elapsed="6.416810"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-26T12:56:04.917179" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-26T12:55:59.915568" elapsed="5.002513"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T12:56:04.924115" level="INFO">Typing text 'Admin' into text field '//input[@name="username"]'.</msg>
+<arg>//input[@name="username"]</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T12:56:04.921077" elapsed="0.122985"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T12:56:05.045060" level="INFO">Typing text 'admin123' into text field '//input[@name="password"]'.</msg>
+<arg>//input[@name="password"]</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T12:56:05.044062" elapsed="0.120104"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-26T12:56:05.166104" level="INFO">Clicking button '//button[@class="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"]'.</msg>
+<arg>//button[@class="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T12:56:05.165156" elapsed="0.161316"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-26T12:56:15.328860" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-26T12:56:05.327470" elapsed="10.003038"/>
+</kw>
+<status status="PASS" start="2025-01-26T12:55:53.494788" elapsed="21.838885"/>
+</test>
+<status status="PASS" start="2025-01-26T12:55:53.035303" elapsed="22.303344"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Start">Start</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
